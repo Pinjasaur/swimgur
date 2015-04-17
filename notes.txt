@@ -1,0 +1,2 @@
+blue:  #00aeef #0bf deepskyblue
+green: #9bc43a #ac4 yellowgreen

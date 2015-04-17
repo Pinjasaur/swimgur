@@ -1,0 +1,86 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: Titillium Web, Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+[data-tooltip] {
+  color: #000;
+  text-decoration: none; }
+  [data-tooltip].tt-l:after {
+    right: 0; }
+  [data-tooltip].tt-r:after {
+    left: 0; }
+  [data-tooltip]:after {
+    position: absolute;
+    bottom: 0;
+    content: attr(data-tooltip);
+    visibility: hidden;
+    opacity: 0;
+    white-space: pre;
+    padding: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Titillium Web, Helvetica, Arial, sans-serif;
+    pointer-events: none;
+    transition: all 250ms ease 0s; }
+  [data-tooltip]:hover:after, [data-tooltip]:focus:after {
+    visibility: visible;
+    opacity: 1;
+    bottom: 100%; }
+
+.swimgur-page-wrap {
+  height: 100%;
+  background-color: #00aeef; }
+.swimgur-container {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 800px;
+  height: 600px;
+  margin: 0 auto; }
+.swimgur-title {
+  position: relative;
+  z-index: 500;
+  text-indent: -9999px;
+  background: url(/img/swimgur.svg) no-repeat 0 15px;
+  background-size: 100%;
+  width: 80%;
+  height: 35%;
+  margin: 0 auto; }
+.swimgur-anim {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 0; }
+.swimgur-info {
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  left: 8px; }
+.swimgur-about {
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 8px; }
+
+@media screen and (max-width: 800px) {
+  .swimgur-container {
+    width: 100%; }
+
+  .swimgur-anim {
+    width: 100%; } }
+@media screen and (max-height: 600px) {
+  .swimgur-container {
+    height: 100%; }
+
+  .swimgur-title {
+    margin-top: 10%; } }
+
+/*# sourceMappingURL=main.css.map */

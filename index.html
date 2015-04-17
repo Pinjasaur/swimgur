@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>swimgur</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/animate.min.css">
+</head>
+<body>
+
+  <div class="swimgur-page-wrap">
+    <div class="swimgur-container">
+      <h1 class="swimgur-title animated zoomIn">swimgur</h1>
+      <img class="swimgur-anim" src="/img/swimgur.gif" alt="swimgur">
+    </div>
+
+    <a href="https://dribbble.com/shots/1808172-Octopus-ish-guy-Swim-Cycle?list=users&offset=2" class="swimgur-info fa fa-info-circle fa-2x tt-r" data-tooltip="Credit to joshua schaeffer for the animation."></a>
+
+    <a href="http://twitter.com/pinjasaur" class="swimgur-about fa fa-question-circle fa-2x tt-l" data-tooltip="Created by Pinjasaur."></a>
+
+  </div>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.firefly.js"></script>
+  <script>
+    $(function() {
+      $.firefly({
+        color: "#6DD7FF",
+        minPixel: 3,
+        maxPixel: 10,
+        total: 35,
+        on: '.swimgur-page-wrap',
+        className: 'firefly-spark',
+        borderRadius: "50%"
+      });
+    });
+  </script>
+</body>
+</html>
